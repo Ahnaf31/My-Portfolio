@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Do Shopify Apps Slow Down Your Store? App vs Custom Section — Ahnaf Shikder Arnob</title>
+<meta name="description" content="Yes, Shopify apps can slow your store, because most apps load extra scripts on every page. A custom Liquid section usually loads faster, because it is built into your theme. Choose an app when you need a complex feature fast, and a custom section when speed, control, and a clean product page matter most." />
+<meta property="og:title" content="Do Shopify Apps Slow Down Your Store? App vs Custom Section" />
+<meta property="og:description" content="Apps can slow a Shopify store. Custom Liquid sections usually do not, because they load no extra app scripts. Here is when to choose each one." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="images/thumbnail-shopify-app-vs-custom-section.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&family=Bungee&family=Space+Grotesk:wght@400;600;700&family=VT323&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Do Shopify Apps Slow Down Your Store? App vs Custom Section","datePublished":"2026-10-26","dateModified":"2026-10-26","author":{"@type":"Person","name":"Ahnaf Shikder Arnob","url":"https://github.com/ahnaf31"},"about":["Shopify","Shopify Liquid","Shopify speed optimisation"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Do Shopify apps slow down your store?","acceptedAnswer":{"@type":"Answer","text":"Yes, they can. Most Shopify apps add JavaScript, CSS, or external requests to your storefront. One well-built app may have little effect, but several apps together can slow page load, especially on product and collection pages. The effect depends on the app, not on the number alone, so test speed before and after installing an app."}},
+ {"@type":"Question","name":"Is a custom Shopify section faster than an app?","acceptedAnswer":{"@type":"Answer","text":"Usually, yes. A custom section is written in Liquid and built into your theme, so it does not load a separate app script, dashboard, or tracking code. For a layout, product block, banner, FAQ, or custom product template, a custom section is normally the faster and cleaner choice."}},
+ {"@type":"Question","name":"When should I use a Shopify app instead of a custom section?","acceptedAnswer":{"@type":"Answer","text":"Use an app when the feature needs a backend, a third-party service, or complex logic that Liquid alone cannot do well — for example reviews with moderation, subscriptions, loyalty points, advanced search, or a live inventory feed. Use a custom section when the job is mainly design, layout, or structured content."}},
+ {"@type":"Question","name":"How do I check if an app is slowing my Shopify store?","acceptedAnswer":{"@type":"Answer","text":"Check your Shopify speed score and a Lighthouse/PageSpeed report, note the result, disable or remove the app on a duplicate theme, then test again. Also check whether the app loads on every page or only where it is needed. If removing it clearly improves load time and you can rebuild the feature as a section, that is usually the better trade."}},
+ {"@type":"Question","name":"Can a slow Shopify store lose sales?","acceptedAnswer":{"@type":"Answer","text":"Yes. A slow product page can increase bounce and lower conversion, especially on mobile, where most Shopify traffic arrives. Speed is not the only factor — product, price, and trust matter too — but a store that feels slow gives shoppers a reason to leave before they buy."}}
+]}
+</script>
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<main class="page">
+  <header class="site-header">
+    <a href="./" class="brand">Ahnaf<span class="brand-dot">.</span></a>
+    <nav aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#writing">Writing</a>
+      <a href="blog.html">Blog</a>
+      <button type="button" class="theme-btn" id="theme-btn">☀️ Light mode</button>
+      <span data-funky-mount></span>
+    </nav>
+  </header>
+
+  <article class="article">
+    <div class="article-header">
+      <div class="post-meta"><time datetime="2026-10-26">26 Oct 2026</time><span>·</span><span>6 min read</span></div>
+      <h1 class="article-title">Do Shopify Apps Slow Down Your Store? App vs Custom Section</h1>
+      <p class="article-desc">Short answer: yes, apps can slow your store, because most of them load extra scripts on every page. A custom Liquid section usually does not, because it lives inside your theme. The right choice is not "never use apps" — it is knowing which job belongs to an app, and which belongs to a section.</p>
+      <div class="tags"><span class="tag">Shopify</span><span class="tag">Speed</span><span class="tag">Custom Sections</span><span class="tag">Apps</span></div>
+      <p><img class="article-thumb" src="images/thumbnail-shopify-app-vs-custom-section.jpg" alt="A fast online storefront on one side and a store weighed down by app scripts on the other, with a speed gauge" /></p>
+    </div>
+    <div class="article-body">
+      <h2>Why apps slow a store down</h2>
+      <p>An app is not just a button in your admin. When a shopper opens your store, many apps add their own JavaScript, CSS, fonts, or calls to an outside server. One good app, used in the right place, may barely matter. Five or ten apps, all loading on every page whether they are needed or not, add up fast — and the product page, the page that has to sell, is usually where it hurts most.</p>
+      <p>That is also why "my store feels slow" is hard to diagnose from the outside. The theme may be fine. The apps may be the weight.</p>
+
+      <h2>App vs custom section, side by side</h2>
+      <table>
+        <tr><th></th><th>Shopify app</th><th>Custom Liquid section</th></tr>
+        <tr><td><strong>Speed</strong></td><td>Often slower, extra scripts and outside requests</td><td>Usually faster, code lives in the theme</td></tr>
+        <tr><td><strong>Best for</strong></td><td>Reviews, subscriptions, loyalty, search, feeds</td><td>Banners, product blocks, FAQs, custom product templates, layout</td></tr>
+        <tr><td><strong>Control</strong></td><td>Limited to the app's settings</td><td>Full control over design, data, and where it loads</td></tr>
+        <tr><td><strong>Cost over time</strong></td><td>Monthly fee, often per app</td><td>One build cost, no monthly app fee for that feature</td></tr>
+        <tr><td><strong>Maintenance</strong></td><td>App updates can change or break things</td><td>Theme updates need care, but nothing outside the theme changes it</td></tr>
+        <tr><td><strong>Data and structure</strong></td><td>Stored in the app, harder to move</td><td>Can use Metafields and Metaobjects, so content stays with the store</td></tr>
+      </table>
+      <p>The rule I use with clients is simple: if the feature is mainly something a shopper sees, build it as a section. If the feature needs a service behind the scenes, use an app — and only that app, not three apps doing the same job.</p>
+
+      <h2>How to check if an app is the problem</h2>
+      <ol>
+        <li>Note your Shopify speed score and run a Lighthouse or PageSpeed test on a product page.</li>
+        <li>Duplicate your theme, remove or disable the suspect app on the duplicate, and test again. Never test by breaking the live theme.</li>
+        <li>Check whether the app loads on every page, or only on the pages that need it. An app that loads everywhere for a feature used on one page is a clear candidate to replace.</li>
+        <li>If removing it clearly helps, ask whether that feature can be rebuilt as a custom section, a Metafield, or a Shopify Flow automation instead.</li>
+      </ol>
+      <p>I do not quote a fixed number of seconds for "one app = X slower", because it is not true. A light, well-built app and a heavy, poorly built app are different things. Test your own store, before and after, and let that decide.</p>
+
+      <h2>What I build instead, in real client work</h2>
+      <p>This is the work I do most: custom sections and templates in Liquid, structured with Metafields and Metaobjects, so a merchant can edit content in the theme editor without touching code, and without adding an app for every block.</p>
+      <p>Two examples from my own work: <a href="https://readyprepgo.ie/" target="_blank" rel="noreferrer">Ready Prep Go</a>, an Irish brand built from scratch on Shopify through Scopioe, and a custom product template for <a href="https://getsuregoods.com/" target="_blank" rel="noreferrer">Getsure Goods</a>, a dropshipping store and a separate client, not a Coalition client project. In both cases the point was the same — a clean, editable storefront, not a stack of apps doing layout work that Liquid can do natively. At Coalition Technologies (July 2025 – June 2026) the same pattern applied: custom sections, headers, and Metafield/Metaobject work on live client stores, plus WCAG 2.1 accessibility fixes.</p>
+
+      <h2>So, app or custom section?</h2>
+      <p>Use an app when you need a backend, a service, or logic Liquid cannot do well. Use a custom section when you need speed, control, and a product page that stays fast as you grow. And audit the apps you already have — most slow stores I see are not slow because of one bad app, but because of five good apps that were never removed when the store outgrew them.</p>
+
+      <h2>Want your store checked?</h2>
+      <p>If your Shopify store feels slow, or you are paying for apps that only do layout, <a href="mailto:ahnafshikder311@gmail.com">email me</a> with your store link and the apps you are unsure about. Tell me what is slow, on which pages, and what you sell. I will tell you honestly whether a custom section can replace an app, or whether an app is genuinely the right tool. You can also connect with me on <a href="https://www.linkedin.com/in/ahnaf-shikder-arnob-941624238/" target="_blank" rel="noreferrer">LinkedIn</a>, or see larger work through <a href="https://www.scopioe.com/" target="_blank" rel="noreferrer">Scopioe</a>.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Ahnaf Shikder Arnob</span>
+    <span><a href="blog.html">← All writing</a></span>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<button type="button" class="backtop" id="backtop" aria-label="Back to top">↑</button>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
